@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="Concrete" content="width=device-width, initial-scale=1.0">
+  <title>CONCRETE</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+
+    .hero {
+      width: 100%;
+      position: relative;
+      overflow: hidden;
+      background: var(--surface);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .hero-img {
+      width:100%;
+      aspect-ratio: 16/6;
+      background-color: #111;
+      background-image: url('https://i.pinimg.com/1200x/3f/cc/9e/3fcc9eb3482265bb3efe6087b267c3eb.jpg');
+      background-size:cover;
+      background-position: center 40%;
+      padding: 7% 3.5rem;
+    }
+    
+    .hero-text {
+      position: relative;
+      z-index: 2;
+    }
+
+    .hero-title {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: clamp(3.5rem, 8vw, 7rem);
+      letter-spacing: 0.03cm;
+      line-height: 95%;
+      color: var(--white);
+    }
+
+    .about {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 4.5rem 2rem 5rem;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4rem;
+      align-items: start;
+    }
+
+    @media (max-width: 640px) { .about { grid-template-columns: 1fr; gap: 2rem; } }
+
+    .about-left .big-text {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: clamp(2.2rem, 4vw, 3.2rem);
+      letter-spacing: 0.03em;
+      line-height: 1.1;
+      margin-bottom: 1.5rem;
+    }
+
+    .about-left .big-text em {
+      font-style: normal;
+      color: var(--accent);
+    }
+
+    .about-right p {
+      color: #888;
+      font-size: 0.97rem;
+      line-height: 1.8;
+      margin-bottom: 1.2rem;
+    }
+
+    .about-right p:last-child { margin-bottom: 0; }
+
+    .page-links {
+      border-top: 1px solid var(--border);
+      max-width: 1350px;
+      margin: 0 auto 0;
+      display:block;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1px;
+      background: var(--border);
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      overflow:auto;
+    }
+
+    @media (max-width: 640px) { .page-links { grid-template-columns: 1fr; } }
+
+    .page-link {
+      background: var(--surface);
+      padding: 2rem 1.75rem;
+      text-decoration: none;
+      color: inherit;
+      display: flex;
+      flex-direction: column;
+      gap: 0.4rem;
+      transition: background 0.2s;
+    }
+
+    .page-link:hover { background: #1f1f1f; }
+
+    .page-link-label {
+      font-size: 0.7rem;
+      font-weight: 600;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--accent);
+    }
+
+    .page-link-title {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 1.5rem;
+      letter-spacing: 0.04em;
+    }
+
+    .page-link-desc { font-size: 0.85rem; color: #777; }
+
+    .page-link-arrow {
+      margin-top: 0.75rem;
+      font-size: 1.1rem;
+      color: var(--accent);
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a class="nav-logo" href="indexEN.html">CONCRETE</a>
+    <ul class="nav-links">
+      <li><a href="indexSK.html">EN</a></li>
+      <li><a href="indexEN.html" class="active">Home</a></li>
+      <li><a href="historyEN.html">History</a></li>
+      <li><a href="decksEN.html">Decks</a></li>
+      <li><a href="tricksEN.html">Tricks</a></li>
+    </ul>
+  </nav>
+
+  <div class="hero">
+    <div class="hero-img">
+      <div class="hero-text">
+        <h1 class="hero-title">Skate.<br>Learn.<br>Live.</h1>
+      </div>
+    </div>
+  </div>
+
+  <div class="about">
+    <div class="about-left">
+      <p class="big-text">A site built for <em>skaters</em> by a skater.</p>
+    </div>
+    <div class="about-right">
+      <p>CONCRETE is a fan page dedicated to the world of skateboarding — from its origins in 1950s California to the technical street skating of today. Whether you just picked up your first board or have been pushing for years, there's something here for you.</p>
+      <p>Explore the history of skateboarding, figure out which deck setup is right for you, or study the tricks — from a basic ollie all the way up to the gnarliest flip variations. I tried to summarize everything simply and honestly. There will be no sponsorships or ads, this is a passion project.</p>
+      <p>Hope this will be helpful. Go SK8.</p>
+    </div>
+  </div>
+
+  <div style="text-align: center;">
+    <p class="label" style="margin-bottom: 1rem;font-size: medium;">Explore the site</p>
+  </div>
+  <div class="page-links">
+    <a href="history.html" class="page-link">
+      <span class="page-link-title">History</span>
+      <span class="page-link-desc">How skateboarding was born, who invented it, and how it spread across the world.</span>
+      <span class="page-link-arrow">→</span>
+    </a>
+    <a href="decks.html" class="page-link">
+      <span class="page-link-title">Decks</span>
+      <span class="page-link-desc">Everything you need to know about choosing the right board — size, shape, and brands.</span>
+      <span class="page-link-arrow">→</span>
+    </a>
+    <a href="tricks.html" class="page-link">
+      <span class="page-link-title">Tricks</span>
+      <span class="page-link-desc">From the ollie to the 360 flip — tricks broken down by difficulty, with history included.</span>
+      <span class="page-link-arrow">→</span>
+    </a>
+  </div>
+
+  <footer style="margin-top: 5rem;">
+    CONCRETE — Oleksandr Kovalenko II.MPS |
+    <a href="history.html">History</a> |
+    <a href="decks.html">Decks</a> |
+    <a href="tricks.html">Tricks</a>
+  </footer>
+
+</body>
+</html>
