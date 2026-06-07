@@ -78,15 +78,6 @@ nav {
   color: var(--accent);
   margin-bottom: 0.75rem;
 }
-.labell {
-  font-size: 0.72rem;
-  font-weight: 600;
-  letter-spacing: 0.22em;
-  text-transform: uppercase;
-  color: var(--accent2);
-  margin-bottom: 0.75rem;
-}
-
 .section-title {
   font-family: var(--font-hero);
   font-size: clamp(2.5rem, 5vw, 4rem);
